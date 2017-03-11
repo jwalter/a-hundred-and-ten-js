@@ -1,0 +1,16 @@
+{
+  "name": "a-hundred-and-ten",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "dependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "license": "ISC"
+}
