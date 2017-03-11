@@ -29,4 +29,8 @@ describe('Solver', function () {
         expect(Solver.findPath(locations)).is.eql([1, 2, 3])
     })
     
+    it('run() should return 1 and 2 and 3 when 1 is neighbour of 2 and 2 is neighbour of 3, disregarding order of neighbours', function() {
+        const locations = [new Location(1, [2]), new Location(2, [3, 1]), new Location(3, [2])]
+        expect(Solver.findPath(locations)).is.eql([1, 2, 3])
+    })
 })
