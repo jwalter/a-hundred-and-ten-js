@@ -1,3 +1,4 @@
-var solver = require('./lib/solver');
+var Solver = require('./lib/solver')
+var Location = require('./lib/location')
 
-console.log(solver.run())
+console.log(Solver.findPath([new Location(1, [])]))

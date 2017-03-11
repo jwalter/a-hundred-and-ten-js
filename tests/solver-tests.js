@@ -33,4 +33,14 @@ describe('Solver', function () {
         const locations = [new Location(1, [2]), new Location(2, [3, 1]), new Location(3, [2])]
         expect(Solver.findPath(locations)).is.eql([1, 2, 3])
     })
+    
+    it('run() ', function() {
+        const locations = [
+            new Location(1, [2, 3]), 
+            new Location(2, [4, 1, 3]), 
+            new Location(3, [1, 2, 4]), 
+            new Location(4, [2, 3, 5]),
+            new Location(5, [4])]
+        expect(Solver.findPath(locations)).is.eql([1, 2, 3, 4, 5])
+    })
 })
